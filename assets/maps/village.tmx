@@ -43,5 +43,9 @@
   <object id="8" x="2.66667" y="6.66667" width="15.3333" height="754.667"/>
   <object id="9" x="33" y="1.66667" width="1223.33" height="22.6667"/>
  </objectgroup>
- <objectgroup id="7" name="Interactions"/>
+ <objectgroup id="7" name="Interactions">
+  <object id="13" name="tower" x="600" y="76" width="80" height="104"/>
+  <object id="14" name="hospital" x="276" y="310" width="144" height="108"/>
+  <object id="15" name="shop" x="860" y="310" width="144" height="108"/>
+ </objectgroup>
 </map>
