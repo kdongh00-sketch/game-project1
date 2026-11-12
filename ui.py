@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import pygame
 
 
@@ -6,11 +8,11 @@ class GameUI:
         self.screen_rect = screen_rect.copy()
 
         # 한글을 표시할 폰트
-        font_names = "malgungothic,notosanscjkkr,nanumgothic,notosanscjksc"
-        self.title_font = pygame.font.SysFont(font_names, 52)
-        self.text_font = pygame.font.SysFont(font_names, 28)
-        self.hint_font = pygame.font.SysFont(font_names, 22)
-        self.map_title_font = pygame.font.SysFont(font_names, 30)
+        font_path = Path(__file__).resolve().parent / "assets" / "fonts" / "NotoSansKR-VF.ttf"
+        self.title_font = pygame.font.Font(str(font_path), 52)
+        self.text_font = pygame.font.Font(str(font_path), 28)
+        self.hint_font = pygame.font.Font(str(font_path), 22)
+        self.map_title_font = pygame.font.Font(str(font_path), 30)
 
         # 게임 시작 버튼
         self.start_button = pygame.Rect(0, 0, 280, 72)

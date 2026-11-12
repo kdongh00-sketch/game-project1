@@ -30,7 +30,7 @@
 
 ```bash
 
-pip install pygame
+python -m pip install -r requirements.txt
 
 python main.py
-
+```
